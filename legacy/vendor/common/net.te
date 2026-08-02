@@ -25,4 +25,4 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-allow netdomain self:icmp_socket create_socket_perms;
+allow { netdomain -coredomain } self:icmp_socket create_socket_perms;
